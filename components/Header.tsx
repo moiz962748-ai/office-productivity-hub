@@ -85,7 +85,7 @@ export default function Header() {
                     <ul className="p-2">
                       {wordLinks.map((link, idx) => (
                         <li key={idx}>
-                          <Link href="/word-hub" onClick={() => setActiveDropdown(null)} className="block px-4 py-2.5 text-sm text-gray-300 hover:text-blue-400 hover:bg-blue-500/10 rounded-lg transition-colors">
+                          <Link href="/word-sub-hub" onClick={() => setActiveDropdown(null)} className="block px-4 py-2.5 text-sm text-gray-300 hover:text-blue-400 hover:bg-blue-500/10 rounded-lg transition-colors">
                             {link}
                           </Link>
                         </li>
@@ -116,7 +116,7 @@ export default function Header() {
                     <ul className="p-2">
                       {excelLinks.map((link, idx) => (
                         <li key={idx}>
-                          <Link href="/excel-hub" onClick={() => setActiveDropdown(null)} className="block px-4 py-2.5 text-sm text-gray-300 hover:text-green-400 hover:bg-green-500/10 rounded-lg transition-colors">
+                          <Link href="/excel-sub-hub" onClick={() => setActiveDropdown(null)} className="block px-4 py-2.5 text-sm text-gray-300 hover:text-green-400 hover:bg-green-500/10 rounded-lg transition-colors">
                             {link}
                           </Link>
                         </li>
@@ -147,7 +147,7 @@ export default function Header() {
                     <ul className="p-2">
                       {powerPointLinks.map((link, idx) => (
                         <li key={idx}>
-                          <Link href="/powerpoint-hub" onClick={() => setActiveDropdown(null)} className="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-orange-500/10 rounded-lg transition-colors">
+                          <Link href="/powerpoint-sub-hub" onClick={() => setActiveDropdown(null)} className="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-orange-500/10 rounded-lg transition-colors">
                             {link}
                           </Link>
                         </li>
@@ -205,7 +205,7 @@ export default function Header() {
               </div>
               <div className="pl-6 flex flex-col space-y-1 border-l border-blue-500/20 ml-4 mb-2">
                 {wordLinks.map((link, idx) => (
-                  <Link key={idx} href="/word-hub" onClick={() => setMobileMenuOpen(false)} className="text-sm text-gray-400 hover:text-white py-1">{link}</Link>
+                  <Link key={idx} href="/word-sub-hub" onClick={() => setMobileMenuOpen(false)} className="text-sm text-gray-400 hover:text-white py-1">{link}</Link>
                 ))}
               </div>
 
@@ -217,7 +217,7 @@ export default function Header() {
               </div>
               <div className="pl-6 flex flex-col space-y-1 border-l border-green-500/20 ml-4 mb-2">
                 {excelLinks.map((link, idx) => (
-                  <Link key={idx} href="/excel-hub" onClick={() => setMobileMenuOpen(false)} className="text-sm text-gray-400 hover:text-white py-1">{link}</Link>
+                  <Link key={idx} href="/excel-sub-hub" onClick={() => setMobileMenuOpen(false)} className="text-sm text-gray-400 hover:text-white py-1">{link}</Link>
                 ))}
               </div>
 
@@ -229,7 +229,7 @@ export default function Header() {
               </div>
               <div className="pl-6 flex flex-col space-y-1 border-l border-orange-500/20 ml-4 mb-2">
                 {powerPointLinks.map((link, idx) => (
-                  <Link key={idx} href="/powerpoint-hub" onClick={() => setMobileMenuOpen(false)} className="text-sm text-gray-400 hover:text-white py-1">{link}Link</Link>
+                  <Link key={idx} href="/powerpoint-sub-hub" onClick={() => setMobileMenuOpen(false)} className="text-sm text-gray-400 hover:text-white py-1">{link}</Link>
                 ))}
               </div>
 
