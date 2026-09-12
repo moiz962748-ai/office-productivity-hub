@@ -24,7 +24,7 @@ export default function Header() {
   ];
 
   const excelLinks = [
-    { name: 'All MS Excel Tutorials', href: '/excel-hub' },
+    { name: 'All MS Excel Tutorials', href: '/all-excel-tutourial' },
     { name: 'Excel Basics & Essentials', href: '/excel-getting-started' },
     { name: 'Formulas & Functions', href: '/excel-formulas' },
     { name: 'AI Tools & Copilot', href: '/excel-ai-tools' },
