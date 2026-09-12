@@ -15,30 +15,30 @@ export default function Header() {
   };
 
   const wordLinks = [
-    'All MS Word Tutorials',
-    'Getting Started & Basics',
-    'Formatting & Design',
-    'AI Tools & Copilot',
-    'Integrations & Workflows',
-    'Word Resources'
+    { name: 'All MS Word Tutorials', href: '/all-word-tutourial' },
+    { name: 'Getting Started & Basics', href: '/word-getting-started' },
+    { name: 'Formatting & Design', href: '/word-formatting' },
+    { name: 'AI Tools & Copilot', href: '/word-ai-tools' },
+    { name: 'Integrations & Workflows', href: '/word-integrations' },
+    { name: 'Word Resources', href: '/word-sub-hub' }
   ];
 
   const excelLinks = [
-    'All MS Excel Tutorials',
-    'Excel Basics & Essentials',
-    'Formulas & Functions',
-    'AI Tools & Copilot',
-    'Integrations & Analytics',
-    'Excel Resources'
+    { name: 'All MS Excel Tutorials', href: '/excel-hub' },
+    { name: 'Excel Basics & Essentials', href: '/excel-getting-started' },
+    { name: 'Formulas & Functions', href: '/excel-formulas' },
+    { name: 'AI Tools & Copilot', href: '/excel-ai-tools' },
+    { name: 'Integrations & Analytics', href: '/excel-integrations' },
+    { name: 'Excel Resources', href: '/excel-sub-hub' }
   ];
 
   const powerPointLinks = [
-    'All PowerPoint Tutorials',
-    'Slide Basics & Setup',
-    'Visual Design & Media',
-    'AI Tools & Copilot',
-    'Integrations & Data Linking',
-    'PowerPoint Templates'
+    { name: 'All PowerPoint Tutorials', href: '/all-powerpoint-tutourial' },
+    { name: 'Slide Basics & Setup', href: '/powerpoint-getting-started' },
+    { name: 'Visual Design & Media', href: '/powerpoint-visual-design' },
+    { name: 'AI Tools & Copilot', href: '/powerpoint-ai-tools' },
+    { name: 'Integrations & Data Linking', href: '/powerpoint-integrations' },
+    { name: 'PowerPoint Templates', href: '/powerpoint-sub-hub' }
   ];
 
   return (
@@ -70,7 +70,7 @@ export default function Header() {
               <button 
                 className={`flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors ${activeDropdown === 'word' ? 'text-white' : 'text-gray-300 hover:text-white'}`}
                 onMouseEnter={() => setActiveDropdown('word')}
-                onClick={() => router.push('/word-hub')}
+                onClick={() => router.push('/word-sub-hub')}
               >
                 MS Word <ChevronDown className="w-4 h-4" />
               </button>
@@ -83,10 +83,10 @@ export default function Header() {
                   <div className="bg-[#0A0E1A]/95 backdrop-blur-2xl border border-blue-500/20 rounded-xl overflow-hidden shadow-2xl">
                     <div className="h-1 bg-blue-600 w-full"></div>
                     <ul className="p-2">
-                      {wordLinks.map((link, idx) => (
+                      {wordLinks.map((item, idx) => (
                         <li key={idx}>
-                          <Link href="/word-sub-hub" onClick={() => setActiveDropdown(null)} className="block px-4 py-2.5 text-sm text-gray-300 hover:text-blue-400 hover:bg-blue-500/10 rounded-lg transition-colors">
-                            {link}
+                          <Link href={item.href} onClick={() => setActiveDropdown(null)} className="block px-4 py-2.5 text-sm text-gray-300 hover:text-blue-400 hover:bg-blue-500/10 rounded-lg transition-colors">
+                            {item.name}
                           </Link>
                         </li>
                       ))}
@@ -101,7 +101,7 @@ export default function Header() {
               <button 
                 className={`flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors ${activeDropdown === 'excel' ? 'text-white' : 'text-gray-300 hover:text-white'}`}
                 onMouseEnter={() => setActiveDropdown('excel')}
-                onClick={() => router.push('/excel-hub')}
+                onClick={() => router.push('/excel-sub-hub')}
               >
                 MS Excel <ChevronDown className="w-4 h-4" />
               </button>
@@ -114,10 +114,10 @@ export default function Header() {
                   <div className="bg-[#0A0E1A]/95 backdrop-blur-2xl border border-green-500/20 rounded-xl overflow-hidden shadow-2xl">
                     <div className="h-1 bg-green-600 w-full"></div>
                     <ul className="p-2">
-                      {excelLinks.map((link, idx) => (
+                      {excelLinks.map((item, idx) => (
                         <li key={idx}>
-                          <Link href="/excel-sub-hub" onClick={() => setActiveDropdown(null)} className="block px-4 py-2.5 text-sm text-gray-300 hover:text-green-400 hover:bg-green-500/10 rounded-lg transition-colors">
-                            {link}
+                          <Link href={item.href} onClick={() => setActiveDropdown(null)} className="block px-4 py-2.5 text-sm text-gray-300 hover:text-green-400 hover:bg-green-500/10 rounded-lg transition-colors">
+                            {item.name}
                           </Link>
                         </li>
                       ))}
@@ -132,7 +132,7 @@ export default function Header() {
               <button 
                 className={`flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors ${activeDropdown === 'powerpoint' ? 'text-white' : 'text-gray-300 hover:text-white'}`}
                 onMouseEnter={() => setActiveDropdown('powerpoint')}
-                onClick={() => router.push('/powerpoint-hub')}
+                onClick={() => router.push('/powerpoint-sub-hub')}
               >
                 MS PowerPoint <ChevronDown className="w-4 h-4" />
               </button>
@@ -145,10 +145,10 @@ export default function Header() {
                   <div className="bg-[#0A0E1A]/95 backdrop-blur-2xl border border-orange-500/20 rounded-xl overflow-hidden shadow-2xl">
                     <div className="h-1 bg-orange-600 w-full"></div>
                     <ul className="p-2">
-                      {powerPointLinks.map((link, idx) => (
+                      {powerPointLinks.map((item, idx) => (
                         <li key={idx}>
-                          <Link href="/powerpoint-sub-hub" onClick={() => setActiveDropdown(null)} className="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-orange-500/10 rounded-lg transition-colors">
-                            {link}
+                          <Link href={item.href} onClick={() => setActiveDropdown(null)} className="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-orange-500/10 rounded-lg transition-colors">
+                            {item.name}
                           </Link>
                         </li>
                       ))}
@@ -199,37 +199,37 @@ export default function Header() {
               
               <div 
                 className="px-3 py-2 font-medium text-blue-400 cursor-pointer"
-                onClick={() => { router.push('/word-hub'); setMobileMenuOpen(false); }}
+                onClick={() => { router.push('/word-sub-hub'); setMobileMenuOpen(false); }}
               >
                 MS Word
               </div>
               <div className="pl-6 flex flex-col space-y-1 border-l border-blue-500/20 ml-4 mb-2">
-                {wordLinks.map((link, idx) => (
-                  <Link key={idx} href="/word-sub-hub" onClick={() => setMobileMenuOpen(false)} className="text-sm text-gray-400 hover:text-white py-1">{link}</Link>
+                {wordLinks.map((item, idx) => (
+                  <Link key={idx} href={item.href} onClick={() => setMobileMenuOpen(false)} className="text-sm text-gray-400 hover:text-white py-1">{item.name}</Link>
                 ))}
               </div>
 
               <div 
                 className="px-3 py-2 font-medium text-green-400 cursor-pointer"
-                onClick={() => { router.push('/excel-hub'); setMobileMenuOpen(false); }}
+                onClick={() => { router.push('/excel-sub-hub'); setMobileMenuOpen(false); }}
               >
                 MS Excel
               </div>
               <div className="pl-6 flex flex-col space-y-1 border-l border-green-500/20 ml-4 mb-2">
-                {excelLinks.map((link, idx) => (
-                  <Link key={idx} href="/excel-sub-hub" onClick={() => setMobileMenuOpen(false)} className="text-sm text-gray-400 hover:text-white py-1">{link}</Link>
+                {excelLinks.map((item, idx) => (
+                  <Link key={idx} href={item.href} onClick={() => setMobileMenuOpen(false)} className="text-sm text-gray-400 hover:text-white py-1">{item.name}</Link>
                 ))}
               </div>
 
               <div 
                 className="px-3 py-2 font-medium text-orange-400 cursor-pointer"
-                onClick={() => { router.push('/powerpoint-hub'); setMobileMenuOpen(false); }}
+                onClick={() => { router.push('/powerpoint-sub-hub'); setMobileMenuOpen(false); }}
               >
                 MS PowerPoint
               </div>
               <div className="pl-6 flex flex-col space-y-1 border-l border-orange-500/20 ml-4 mb-2">
-                {powerPointLinks.map((link, idx) => (
-                  <Link key={idx} href="/powerpoint-sub-hub" onClick={() => setMobileMenuOpen(false)} className="text-sm text-gray-400 hover:text-white py-1">{link}</Link>
+                {powerPointLinks.map((item, idx) => (
+                  <Link key={idx} href={item.href} onClick={() => setMobileMenuOpen(false)} className="text-sm text-gray-400 hover:text-white py-1">{item.name}</Link>
                 ))}
               </div>
 
