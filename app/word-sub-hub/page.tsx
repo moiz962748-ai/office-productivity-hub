@@ -134,9 +134,9 @@ export default function WordSubHub() {
               </div>
               <h3 className="text-lg font-bold text-white mb-3">Understanding Microsoft Copilot Interface & Capabilities in Word</h3>
               <p className="text-justify text-sm text-gray-400 mb-8 flex-grow">Learn where Copilot sits inside the Word Ribbon, canvas draft popups, and sidebar chat windows.</p>
-              <a href="#" className="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
+              <Link href="/word-articles/how-to-draft-10-page-report" className="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
                 Start Step 1 → <ChevronRight className="w-4 h-4 text-gray-600" />
-              </a>
+              </Link>
             </div>
             
             {/* Step 2 */}
@@ -150,9 +150,9 @@ export default function WordSubHub() {
               </div>
               <h3 className="text-lg font-bold text-white mb-3">How to Write Effective Prompts for Report Drafting</h3>
               <p className="text-justify text-sm text-gray-400 mb-8 flex-grow">Master the 4-part prompt formula — Context, Task, Constraints, and Source — for precise document outputs.</p>
-              <a href="#" className="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
+              <Link href="/word-articles/master-prompt-engineering" className="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
                 Start Step 2 → <ChevronRight className="w-4 h-4 text-gray-600" />
-              </a>
+              </Link>
             </div>
 
             {/* Step 3 */}
@@ -166,9 +166,9 @@ export default function WordSubHub() {
               </div>
               <h3 className="text-lg font-bold text-white mb-3">Summarizing Complex Documents & Exporting Multi-Page Summaries</h3>
               <p className="text-justify text-sm text-gray-400 mb-8 flex-grow">Extract executive bullet points, key risks, and action items from 50+ page contract PDFs and DOCX files.</p>
-              <a href="#" className="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
+              <Link href="/word-articles/how-to-summarize-50-page-contract" className="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
                 Start Step 3 → <ChevronRight className="w-4 h-4 text-gray-600" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -227,7 +227,7 @@ export default function WordSubHub() {
                 <div className="flex items-center gap-3">
                   <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500 tracking-widest uppercase bg-white/[0.02] px-2 py-1 rounded"><Play className="w-3 h-3 text-red-500 fill-current" /> Video</span>
                 </div>
-                <Link href="/article-landing" className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Read Full Tutorial →</Link>
+                <Link href="/word-articles/how-to-draft-10-page-report" className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Read Full Tutorial →</Link>
               </div>
             </div>
 
@@ -255,7 +255,7 @@ export default function WordSubHub() {
                   <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500 tracking-widest uppercase bg-white/[0.02] px-2 py-1 rounded"><Play className="w-3 h-3 text-red-500 fill-current" /> Video</span>
                   <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500 tracking-widest uppercase bg-white/[0.02] px-2 py-1 rounded"><FileText className="w-3 h-3 text-green-400" /> Practice File</span>
                 </div>
-                <Link href="/article-landing" className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Read Full Tutorial →</Link>
+                <Link href="/word-articles/master-prompt-engineering" className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Read Full Tutorial →</Link>
               </div>
             </div>
 
@@ -282,7 +282,7 @@ export default function WordSubHub() {
               <div className="flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
                 <div className="flex items-center gap-3">
                 </div>
-                <Link href="/article-landing" className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Read Full Tutorial →</Link>
+                <Link href="/word-articles/best-ai-add-ins" className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Read Full Tutorial →</Link>
               </div>
             </div>
 
@@ -310,7 +310,7 @@ export default function WordSubHub() {
                   <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500 tracking-widest uppercase bg-white/[0.02] px-2 py-1 rounded"><Play className="w-3 h-3 text-red-500 fill-current" /> Video</span>
                   <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500 tracking-widest uppercase bg-white/[0.02] px-2 py-1 rounded"><FileText className="w-3 h-3 text-green-400" /> Practice File</span>
                 </div>
-                <Link href="/article-landing" className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Read Full Tutorial →</Link>
+                <Link href="/word-articles/how-to-summarize-50-page-contract" className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Read Full Tutorial →</Link>
               </div>
             </div>
 
@@ -337,7 +337,7 @@ export default function WordSubHub() {
                 <div className="flex items-center gap-3">
                   <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500 tracking-widest uppercase bg-white/[0.02] px-2 py-1 rounded"><FileText className="w-3 h-3 text-green-400" /> Practice File</span>
                 </div>
-                <Link href="/article-landing" className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Read Full Tutorial →</Link>
+                <Link href="/word-articles/automating-mail-merge" className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Read Full Tutorial →</Link>
               </div>
             </div>
 
@@ -364,7 +364,7 @@ export default function WordSubHub() {
               <div className="flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
                 <div className="flex items-center gap-3">
                 </div>
-                <Link href="/article-landing" className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Read Full Tutorial →</Link>
+                <Link href="/word-articles/word-copilot-vs-chatgpt" className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Read Full Tutorial →</Link>
               </div>
             </div>
 
@@ -399,7 +399,7 @@ export default function WordSubHub() {
               </div>
               
               <div className="flex justify-between items-center py-4 border-t border-[#1E2536]/50 mt-4">
-                <Link href="/article-landing" className="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors">Related Written Tutorial →</Link>
+                <Link href="/word-articles/how-to-draft-10-page-report" className="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors">Related Written Tutorial →</Link>
                 <a href="#" className="text-sm font-semibold text-gray-400 hover:text-white transition-colors flex items-center gap-2">
                   <Download className="w-4 h-4" /> Download Practice File →
                 </a>

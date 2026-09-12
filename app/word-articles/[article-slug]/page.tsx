@@ -5,17 +5,20 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { 
   ChevronRight, 
-  ChevronLeft, 
-  Download, 
+  Lightbulb, 
+  UserCircle, 
   Play, 
   FileText, 
-  CheckCircle2, 
-  Info, 
-  AlertTriangle, 
-  Copy, 
-  Layout, 
-  Clock, 
+  Download, 
   Plus, 
+  Clock, 
+  Search, 
+  CheckCircle2, 
+  ChevronLeft,
+  Info,
+  AlertTriangle,
+  Copy,
+  Layout,
   Check,
   ExternalLink,
   ChevronUp
@@ -88,7 +91,7 @@ const wordArticlesData: Record<string, {
 
 export default function WordArticleDynamicPage() {
   const params = useParams();
-  const slug = params?.slug as string;
+  const slug = params?.articleSlug as string || params?.slug as string;
   const [copied, setCopied] = useState(false);
 
   const article = wordArticlesData[slug] || {
