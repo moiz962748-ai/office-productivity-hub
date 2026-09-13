@@ -122,7 +122,7 @@ export default function PowerPointSubHub() {
             <p className="text-justify text-sm text-gray-400">Follow the recommended sequence to move from understanding Copilot to creating practical AI-powered document workflows.</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {/* Step 1 */}
             <div className="bg-white/[0.02] backdrop-blur-sm border border-[#1E2536]/50 rounded-2xl p-6 relative overflow-hidden group hover:border-orange-500/30 transition-colors shadow-xl">
               <div className="flex justify-between items-center mb-6">
@@ -134,9 +134,9 @@ export default function PowerPointSubHub() {
               </div>
               <h3 className="text-lg font-bold text-white mb-3">Creating a 10-Slide Deck from a Word Document or File Link</h3>
               <p className="text-justify text-sm text-gray-400 mb-8 flex-grow">Paste your Word document link into Copilot to auto-build structured slides with headings and visual icons.</p>
-              <a href="#" className="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
+              <Link href="/powerpoint-articles/how-to-convert-word-document-into-powerpoint-deck" className="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
                 Start Step 1 → <ChevronRight className="w-4 h-4 text-gray-600" />
-              </a>
+              </Link>
             </div>
             
             {/* Step 2 */}
@@ -150,25 +150,9 @@ export default function PowerPointSubHub() {
               </div>
               <h3 className="text-lg font-bold text-white mb-3">Redesigning Cluttered Text Slides with AI Designer Prompts</h3>
               <p className="text-justify text-sm text-gray-400 mb-8 flex-grow">Convert dense bulleted lists into clean visual diagrams, timeline cards, and high-impact stat callouts.</p>
-              <a href="#" className="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
+              <Link href="/powerpoint-articles/mastering-powerpoint-designer-and-copilot-slide-layout-prompts" className="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
                 Start Step 2 → <ChevronRight className="w-4 h-4 text-gray-600" />
-              </a>
-            </div>
-
-            {/* Step 3 */}
-            <div className="bg-white/[0.02] backdrop-blur-sm border border-[#1E2536]/50 rounded-2xl p-6 relative overflow-hidden group hover:border-orange-500/30 transition-colors shadow-xl">
-              <div className="flex justify-between items-center mb-6">
-                <div className="w-8 h-8 rounded-full bg-white/[0.02] backdrop-blur-sm border border-[#1E2536]/50 text-gray-300 flex items-center justify-center font-bold text-xs">03</div>
-                <div className="flex items-center gap-3">
-                  <span className="text-xs text-gray-500 flex items-center gap-1"><Clock className="w-3 h-3"/> 14 mins</span>
-                  <span className="bg-blue-500/10 text-blue-400 px-2 py-1 rounded text-[10px] font-bold tracking-widest uppercase">ADVANCED</span>
-                </div>
-              </div>
-              <h3 className="text-lg font-bold text-white mb-3">Generating Speaker Notes & Presenter Practice Scripts</h3>
-              <p className="text-justify text-sm text-gray-400 mb-8 flex-grow">Let Copilot generate comprehensive presenter scripts for each slide aligned with target meeting time limits.</p>
-              <a href="#" className="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
-                Start Step 3 → <ChevronRight className="w-4 h-4 text-gray-600" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -228,7 +212,7 @@ export default function PowerPointSubHub() {
                   <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500 tracking-widest uppercase bg-white/[0.02] px-2 py-1 rounded"><Play className="w-3 h-3 text-red-500 fill-current" /> Video</span>
                   <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500 tracking-widest uppercase bg-white/[0.02] px-2 py-1 rounded"><FileText className="w-3 h-3 text-green-400" /> Practice File</span>
                 </div>
-                <Link href="/article-landing" className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Read Full Tutorial →</Link>
+                <Link href="/powerpoint-articles/how-to-convert-word-document-into-powerpoint-deck" className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Read Full Tutorial →</Link>
               </div>
             </div>
 
@@ -255,7 +239,7 @@ export default function PowerPointSubHub() {
                 <div className="flex items-center gap-3">
                   <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500 tracking-widest uppercase bg-white/[0.02] px-2 py-1 rounded"><Play className="w-3 h-3 text-red-500 fill-current" /> Video</span>
                 </div>
-                <Link href="/article-landing" className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Read Full Tutorial →</Link>
+                <Link href="/powerpoint-articles/mastering-powerpoint-designer-and-copilot-slide-layout-prompts" className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors">Read Full Tutorial →</Link>
               </div>
             </div>
 
@@ -290,7 +274,7 @@ export default function PowerPointSubHub() {
               </div>
               
               <div className="flex justify-between items-center py-4 border-t border-[#1E2536]/50 mt-4">
-                <Link href="/article-landing" className="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors">Related Written Tutorial →</Link>
+                <Link href="/powerpoint-articles/how-to-convert-word-document-into-powerpoint-deck" className="text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors">Related Written Tutorial →</Link>
                 <a href="#" className="text-sm font-semibold text-gray-400 hover:text-white transition-colors flex items-center gap-2">
                   <Download className="w-4 h-4" /> Download Practice File →
                 </a>

@@ -134,9 +134,9 @@ export default function ExcelSubHub() {
               </div>
               <h3 className="text-lg font-bold text-white mb-3">Asking Copilot to Explain Complex Excel Formulas</h3>
               <p className="text-justify text-sm text-gray-400 mb-8 flex-grow">Highlight any nested formula cell and ask Copilot to break down the calculation logic in plain language.</p>
-              <a href="#" className="text-sm font-semibold text-green-400 hover:text-green-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
+              <Link href="/excel-articles/how-to-write-nested-excel-formulas" className="text-sm font-semibold text-green-400 hover:text-green-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
                 Start Step 1 → <ChevronRight className="w-4 h-4 text-gray-600" />
-              </a>
+              </Link>
             </div>
             
             {/* Step 2 */}
@@ -150,9 +150,9 @@ export default function ExcelSubHub() {
               </div>
               <h3 className="text-lg font-bold text-white mb-3">Generating Advanced XLOOKUP & SUMIFS Prompts</h3>
               <p className="text-justify text-sm text-gray-400 mb-8 flex-grow">Describe multi-criteria lookups in plain English to generate error-free dynamic array formulas.</p>
-              <a href="#" className="text-sm font-semibold text-green-400 hover:text-green-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
+              <Link href="/excel-articles/automating-pivottables-and-insights" className="text-sm font-semibold text-green-400 hover:text-green-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
                 Start Step 2 → <ChevronRight className="w-4 h-4 text-gray-600" />
-              </a>
+              </Link>
             </div>
 
             {/* Step 3 */}
@@ -166,9 +166,9 @@ export default function ExcelSubHub() {
               </div>
               <h3 className="text-lg font-bold text-white mb-3">Automating PivotTables & Python Analysis with AI</h3>
               <p className="text-justify text-sm text-gray-400 mb-8 flex-grow">Run automated statistical models, trend forecasts, and chart generation directly inside Excel grid cells.</p>
-              <a href="#" className="text-sm font-semibold text-green-400 hover:text-green-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
+              <Link href="/excel-articles/python-in-excel-copilot" className="text-sm font-semibold text-green-400 hover:text-green-300 transition-colors flex items-center justify-between border-t border-[#1E2536]/50 pt-4">
                 Start Step 3 → <ChevronRight className="w-4 h-4 text-gray-600" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -228,7 +228,7 @@ export default function ExcelSubHub() {
                   <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500 tracking-widest uppercase bg-white/[0.02] px-2 py-1 rounded"><Play className="w-3 h-3 text-red-500 fill-current" /> Video</span>
                   <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500 tracking-widest uppercase bg-white/[0.02] px-2 py-1 rounded"><FileText className="w-3 h-3 text-green-400" /> Practice File</span>
                 </div>
-                <Link href="/article-landing" className="text-xs font-bold text-green-400 hover:text-green-300 transition-colors">Read Full Tutorial →</Link>
+                <Link href="/excel-articles/how-to-write-nested-excel-formulas" className="text-xs font-bold text-green-400 hover:text-green-300 transition-colors">Read Full Tutorial →</Link>
               </div>
             </div>
 
@@ -256,7 +256,7 @@ export default function ExcelSubHub() {
                   <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500 tracking-widest uppercase bg-white/[0.02] px-2 py-1 rounded"><Play className="w-3 h-3 text-red-500 fill-current" /> Video</span>
                   <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500 tracking-widest uppercase bg-white/[0.02] px-2 py-1 rounded"><FileText className="w-3 h-3 text-green-400" /> Practice File</span>
                 </div>
-                <Link href="/article-landing" className="text-xs font-bold text-green-400 hover:text-green-300 transition-colors">Read Full Tutorial →</Link>
+                <Link href="/excel-articles/automating-pivottables-and-insights" className="text-xs font-bold text-green-400 hover:text-green-300 transition-colors">Read Full Tutorial →</Link>
               </div>
             </div>
 
@@ -283,7 +283,7 @@ export default function ExcelSubHub() {
                 <div className="flex items-center gap-3">
                   <span className="flex items-center gap-1 text-[10px] font-bold text-gray-500 tracking-widest uppercase bg-white/[0.02] px-2 py-1 rounded"><FileText className="w-3 h-3 text-green-400" /> Practice File</span>
                 </div>
-                <Link href="/article-landing" className="text-xs font-bold text-green-400 hover:text-green-300 transition-colors">Read Full Tutorial →</Link>
+                <Link href="/excel-articles/python-in-excel-copilot" className="text-xs font-bold text-green-400 hover:text-green-300 transition-colors">Read Full Tutorial →</Link>
               </div>
             </div>
 
@@ -318,7 +318,7 @@ export default function ExcelSubHub() {
               </div>
               
               <div className="flex justify-between items-center py-4 border-t border-[#1E2536]/50 mt-4">
-                <Link href="/article-landing" className="text-sm font-semibold text-green-400 hover:text-green-300 transition-colors">Related Written Tutorial →</Link>
+                <Link href="/excel-articles/how-to-write-nested-excel-formulas" className="text-sm font-semibold text-green-400 hover:text-green-300 transition-colors">Related Written Tutorial →</Link>
                 <a href="#" className="text-sm font-semibold text-gray-400 hover:text-white transition-colors flex items-center gap-2">
                   <Download className="w-4 h-4" /> Download Practice File →
                 </a>
